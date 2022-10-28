@@ -1,6 +1,11 @@
 body {
     margin:0;
 }
+.d-flex{
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 2rem; */
+}
  
 .bg {
     animation:slide 3s ease-in-out infinite alternate;
@@ -51,7 +56,7 @@ h2 {
     width: 25%;
     background-color: transparent;
     border: 1px solid black;
-    margin-bottom: 2rem;
+    margin: 2rem 0; 
     margin-left: 1rem;
     padding: 0.8rem;
 }
@@ -61,7 +66,9 @@ h2 {
     color: #fff;
     font-size: 1rem;
 }
-#gen:hover{
+.genres p{
+}
+#gen:hover,#copy:hover{
     background-color: #6c3;
     color: #fff;
     border: #6c3 1px solid;
@@ -69,6 +76,38 @@ h2 {
 }
 #result{
     display: none;
+}
+#copy{
+    padding: 0.5rem;
+    border: #09f 2px solid;
+    background-color: #09f;
+    color: #fff;
+}
+#copy::before{
+    content: "Copied";
+    position: absolute;
+    background-color: #09f;
+    width: 3rem;
+    bottom: -30%;
+    right: 18%;
+    padding: 0.25rem .5rem;
+    border-radius: 20px;
+    display: none;
+}
+#copy:active #copy::before{
+    display: block;
+}
+#copy-text{
+    color: #6c3;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.copy-res-cont{
+    width: 70%;
+}
+.copy-cont{
+    width: 20%;
+    position: relative;
 }
 .res-title{
     color: cadetblue;
