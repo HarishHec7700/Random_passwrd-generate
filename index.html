@@ -19,7 +19,14 @@
                     <input type="number" id="noChar">
                     <div class="res" id="result">
                         <h4 class="res-title">Your Generated Password is </h4>
-                        <p id="passRes"></p>
+                        <div class="genres d-flex">
+                            <div class="copy-res-cont">
+                                <p id="passRes"></p>
+                            </div>
+                            <div class="copy-cont">
+                                <iconify-icon icon="pajamas:copy-to-clipboard" id="copy"></iconify-icon>
+                            </div>
+                        </div>
                     </div>
                     <br>
                     <button id="gen">Generate</button>
@@ -27,5 +34,6 @@
         </div>
     </main>
     <script src="script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 </body>
 </html>
